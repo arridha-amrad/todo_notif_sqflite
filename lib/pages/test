@@ -1,0 +1,55 @@
+          GestureDetector(
+            onTap: () => controller.pickColorIndex.value = 0,
+            child: Container(
+              width: 30,
+              height: 30,
+              decoration: BoxDecoration(
+                border: controller.pickColorIndex.value == 0
+                    ? Border.all(
+                        color: Colors.grey,
+                        width: 4.0,
+                      )
+                    : Border.all(width: 0),
+                borderRadius: BorderRadius.circular(50),
+                color: Colors.deepPurple,
+              ),
+            ),
+          ),
+          const SizedBox(
+            width: 10.0,
+          ),
+          GestureDetector(
+            onTap: () => controller.pickColorIndex.value = 1,
+            child: Container(
+              width: 30,
+              height: 30,
+              decoration: BoxDecoration(
+                  border: controller.pickColorIndex.value == 1
+                      ? Border.all(
+                          color: Colors.grey,
+                          width: 4.0,
+                        )
+                      : Border.all(width: 0),
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.orange),
+            ),
+          ),
+          const SizedBox(
+            width: 10.0,
+          ),
+          GestureDetector(
+            onTap: () => controller.pickColorIndex.value = 2,
+            child: Container(
+              width: 30,
+              height: 30,
+              decoration: BoxDecoration(
+                  border: controller.pickColorIndex.value == 2
+                      ? Border.all(
+                          color: Colors.grey,
+                          width: 4.0,
+                        )
+                      : Border.all(width: 0),
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.green),
+            ),
+          ),
